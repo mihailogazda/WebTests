@@ -7,14 +7,6 @@ Most of the projects should still work, but the code is not documented and not i
 
 ##Projects
 
-###Cimeri
-Roomate rental service test , Sencha Touch, JavaScript.
-
-Live test: [http://www.bihoskop.com/cimeri]
-
-###Editor
-Just checking if any kind of game scene editor could made online. jQuery, JavaScript. Some PHP.
-
 ###Game
 Simple platformer game made with CraftyJS framework. JavaScript.
 
@@ -22,8 +14,17 @@ Please **use keyboard** to navigate through menu.
 
 Live test:[http://www.bihoskop.com/game/] 
 
+###Editor
+Just checking if any kind of game scene editor could made online. jQuery, JavaScript. Some PHP.
+
 ###Stretch 
 Simple game made with CraftyJS mocking Psy and his style. **NOT SAFE FOR WORK**. JavaScript.
+
+###Cimeri
+Roomate rental service test , Sencha Touch, JavaScript.
+
+Live test: [http://www.bihoskop.com/cimeri]
+
 
 Live test:[http://www.bihoskop.com/stretch/]
 
