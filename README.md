@@ -18,7 +18,7 @@ Just checking if any kind of game scene editor could made online. jQuery, JavaSc
 ###Game
 Simple platformer game made with CraftyJS framework. JavaScript.
 
-Please **use keyboard** to navigate through meny.
+Please **use keyboard** to navigate through menu.
 
 Live test:[http://www.bihoskop.com/game/] 
 
