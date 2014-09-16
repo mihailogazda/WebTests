@@ -1,0 +1,153 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>H5 2D Level Editor</title>
+        <link href="./res/jquery-ui-1.8.16.custom.css" rel="stylesheet">
+        <script src="./res/jquery-1.8.3.js"></script>
+        <script src="./res/jquery-ui.js"></script>		
+        <script src="./res/jquery.transform-0.9.3.js"></script>		
+        <script src="./res/jquery.layout.js"></script>				
+        <script src="./res/jquery.ui.multidraggable-1.8.8.js"></script>        
+
+        <script src="./res/json2.js"></script>
+        <script src="./res/tileset.json"></script>
+
+        <link href="main.css" rel="stylesheet">                
+        <script src="main.menu.js"></script>
+        <script src="main.filesystem.js"></script>
+        <script src="main.utils.js"></script>
+        <script src="main.js"></script>
+
+    </head>
+    <body>
+        
+        <!-- TOOLBAR -->
+        <div class="header ui-layout-north" id="header">
+
+            <span style="margin-right: 10px;">
+                <button id="saveButton">Save</button>
+                <button id="loadButton">Load</button>
+            </span>
+
+            <span id="group1">
+                <input type="radio" id="select" name="repeat" checked="checked" /><label for="select">Select</label>
+                <input type="radio" id="insert" name="repeat" /><label for="insert">Insert</label>        
+            </span>
+
+            <div id="scaleSlider"></div>
+            <button id="resetScale">Reset scale</button>
+            <input type="checkbox" id="snapToGrid" />
+            <label for="snapToGrid">Snap to grid</label>
+            
+            
+            <button id="north_pin" class="ui-icon-pin-s"></button>
+
+        </div>		
+
+        <!-- VIEWPORT -->
+        <div class="left ui-layout-center" id="left">
+            <center>
+                <div id="viewport" class="viewport"></div>
+            </center>
+        </div>
+
+        <!-- RIGHT PANEL -->
+        <div class="right ui-layout-east" id="right">
+            <!--
+            <div id="accordion" class="accordion">
+                
+                <h3> 
+                    Resources 
+                    <button id="east_pin" class="ui-icon-pin-s"></button>
+                </h3>
+                
+                <div style="padding: 0px;">
+                    <ol id="resources"></ol>
+                </div>
+
+                <h3> Layers </h3>
+                <div style="padding: 0px;">
+                    <ol id="layers"></ol>
+                </div>
+                        
+                <h3> Settings </h3>
+                <div id="settings">Checkboxes and item settings (selected item)</div>
+            </div>
+            -->                        
+            
+            <div class="ui-layout-north">
+                
+                <div class="title">
+                    <h3> 
+                        Layers 
+                        <button id="layers_pin" class="ui-icon-pin-s"></button>
+                    </h3>
+                </div>
+                
+                <div class="body">
+                    <ol id="layers"></ol>
+                </div>
+            </div>
+            
+            <div class="ui-layout-center" id="rightCenterPane">
+                                                
+                <div class="title">
+                    <h3> 
+                        Resources                         
+                        <button id="east_pin" class="ui-icon-pin-s"></button>
+                    </h3>
+                </div>
+                                
+                <div class="body">
+                    <ol id="resources"></ol>
+                </div>
+            </div>
+
+            
+            <div class="ui-layout-south">
+                <div class="title">
+                <h3> 
+                    Settings 
+                    <button id="settings_pin" class="ui-icon-pin-s"></button>
+                </h3>
+                </div>
+                <div class="body">
+                </div>
+            </div>            
+
+        </div>
+
+
+        <!-- UTILITY HELPERS -->
+        <ul id="copyMenu">
+            <li> <a href="javascript://" id="copy">Duplicate me</a> </li>            
+            <li> <a href="javascript://" id="delete">Delete me</a> </li>
+            
+            <!--separator --><li class="ui-state-disabled"><a href=""></a></li>
+            <li> <a href="javascript://" id="sendToBack">Send to back</a> </li>
+            <li> <a href="javascript://" id="decZorder">Push away</a> </li>
+            <li> <a href="javascript://" id="incZorder">Pull closer</a> </li>
+            <li> <a href="javascript://" id="sendToFront">Bring to front</a> </li>
+            
+            
+            
+        </ul>
+
+        <div id="dialog-modal" title="" style="display: none;">
+
+        </div>		
+        <!-- END HELPERS -->
+
+        <!--<div class="footer ui-layout-south">
+            
+        </div>-->
+        
+        <!-- Preload resources -->
+        <div class="preload">
+            <img src="./res/icons.png" /> 
+            <img src="./res/tileset.png"/>
+        </div>
+        
+    </body>
+
+</html>

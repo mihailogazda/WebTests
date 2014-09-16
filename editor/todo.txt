@@ -1,0 +1,11 @@
+
+OK 1. Fix issues with insert mode when viewport scrolled.
+OK 2. Implement layers removal.
+
+3. Scale mode has serious issues.
+
+4. COPY PASTE FUNCTIONALITY -- MAJOR -- 
+5. Implement resize of object (scaling)
+
+6. Implement layer management -- MAJOR --
+7. 
