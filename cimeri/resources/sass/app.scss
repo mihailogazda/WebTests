@@ -1,0 +1,36 @@
+//$base-color: #EAF205;
+//$base-gradient: 'glossy';
+
+@import 'sencha-touch/default/all';
+
+// You may remove any of the following modules that you
+// do not use in order to create a smaller css file.
+@include sencha-panel;
+@include sencha-buttons;
+@include sencha-sheet;
+@include sencha-picker;
+@include sencha-tabs;
+@include sencha-toolbar;
+@include sencha-toolbar-forms;
+@include sencha-indexbar;
+@include sencha-list;
+@include sencha-layout;
+@include sencha-carousel;
+@include sencha-form;
+@include sencha-msgbox;
+
+// Your custom code goes here...
+@include sencha-loading-spinner;
+
+@include pictos-iconmask("user_add");
+@include pictos-iconmask("find");
+@include pictos-iconmask("chat");
+@include pictos-iconmask("nodes2");
+@include pictos-iconmask("settings7");
+
+@include pictos-iconmask("list");
+@include pictos-iconmask("tweak");
+@include pictos-iconmask("search");
+@include pictos-iconmask("refresh");
+
+@include pictos-iconmask("reply");

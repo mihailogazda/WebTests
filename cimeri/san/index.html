@@ -1,0 +1,56 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"> </script>           
+
+    </head>
+    <body>
+    <center>
+        
+        <!-- SAN SOCIAL START -->
+        <div id="san_social_start">
+            <style>
+                body {
+                    background-color: #E7E3E2;
+                    background-image: url(http://sanmagazin.com/templates/stylecouncil/images/bodybg.png);
+                }
+                #san_social_main {
+                    margin-top: 10%;
+                }
+                #san_social_main img {
+                    margin-right: 20px;
+                }
+            </style>        
+            <script src="http://jqueryrotate.googlecode.com/svn/trunk/jQueryRotate.js" type="text/javascript"></script>
+            <script type="text/javascript">            
+                jQuery(window).load(function(){                                
+                    jQuery("#san_social_fb, #san_social_gg, #san_social_tw").rotate({
+                        bind:
+                            {
+                            mouseover : function(){
+                                jQuery(this).rotate({animateTo:360})
+                            },
+                            mouseout : function(){
+                                jQuery(this).rotate({animateTo:0})
+                            }
+                        }
+                    });                
+                });
+            </script>        
+            <div id="san_social_main">
+                <a href="http://www.facebook.com/sanmagazine"><img id="san_social_fb" src="facebook.png"/></a>
+                <a href="http://plus.google.com/109094041401151589015"><img id="san_social_gg" src="google.png"/></a>
+                <a href="http://twitter.com/sanmagazin"><img id="san_social_tw" src="twitter.png"/></a>
+            </div>
+        </div>
+        <!-- SAN SOCIAL END -->
+        
+    </center>
+</body>
+</html>
